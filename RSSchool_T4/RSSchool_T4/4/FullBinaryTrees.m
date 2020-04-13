@@ -2,7 +2,26 @@
 
 @implementation FullBinaryTrees
 - (NSString *)stringForNodeCount:(NSInteger)count {
-    // good luck
-    return 0;
+    
+    switch (count) {
+        case 0:
+            return @"[]";
+            break;
+            
+        case 1:
+            return @"[[0]]";
+            break;
+            
+        default:
+            break;
+    }
+    
+    if (count % 2 == 0) {
+        
+        return @"[]";
+    }
+    
+    return @"[[0]]";
 }
 @end
+
